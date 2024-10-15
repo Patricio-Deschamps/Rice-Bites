@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Bites</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .banner {
+            width: 100%;
+            height: 200px; /* Ajusta esta altura según tus necesidades */
+            background-image: url('RC Banner.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        nav {
+            background-color: #87cefa;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd1dc;
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .product-info {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .entrega-title {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 700;
+            color: #ff69b4;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            background: linear-gradient(45deg, #ffd1dc, #87cefa);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <!-- El banner se mostrará aquí -->
+    </div>
+    
+<nav>
+    <ul>
+        <li><a href="#inicio" onclick="showSection('inicio')">Inicio</a></li>
+        <li><a href="#entrega1" onclick="showSection('entrega1')">Entrega 1</a></li>
+        <li><a href="#entrega2" onclick="showSection('entrega2')">Entrega 2</a></li>
+        <li><a href="#entrega3" onclick="showSection('entrega3')">Entrega 3</a></li>
+        <li><a href="#videos" onclick="showSection('videos')">Videos</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <div id="inicio" class="section active">
+            <div class="product-info">
+                <h2>Bienvenidos a Rice Bites</h2>
+                <p>Descubre la deliciosa innovación en snacks saludables.</p>
+                <img src="Rice 2.jpg" alt="Imagen del Producto" class="product-image">
+                <h3>Nuestro Producto</h3>
+                <p>Rice Bites: el snack crujiente y saludable hecho de arroz integral. Perfecto para cualquier momento del día.</p>
+                <ul>
+                    <li>100% Natural</li>
+                    <li>Sin gluten</li>
+                    <li>Bajo en calorías</li>
+                </ul>
+                <p>Precio: $20</p>
+                <a href="#" class="btn">Comprar Ahora</a>
+                <div class="media-container">
+                    <h3>Galería</h3>
+                    <img src="Bites 2.jpg" alt="Rice Bites Variedad">
+                    <video width="100%" controls>
+                        <source src="Video 1.4.mp4" type="video/mp4">
+                        Tu navegador no soporta el tag de video.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div id="entrega1" class="section">
+            <div class="product-info">
+                <h2 class="entrega-title">BD <span style="font-size: 0.8em; display: block; color: #333;">(Biológicamente Deliciosos)</span></h2>
+                
+                <table style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+                    <tr>
+                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Clave</th>
+                        <td style="border: 1px solid #ddd; padding: 8px;">06-302</td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Integrantes</th>
+                        <td style="border: 1px solid #ddd; padding: 8px;">
+                            Barriga Hernandez Monserrat N.L: 02<br>
+                            Deschamps Andrade Patricio N.L: 09<br>
+                            Garcia Gasga Danna Gabriela N.L: 13<br>
+                            Lopez Santos Luis Angel N.L: 22<br>
+                            Posada Montiel Sergio Eduardo N.L: 29
+                        </td>
+                    </tr>
+                </table>
+
+            <h3>Propuesta 1: Galletas de arroz con frutas (Barriga Hernandez Monserrat)</h3>
+            <p>
+                Son sencillas y rápidas de hacer. puedes fusionarlas con frutas y 
+                convertirse en un aperitivo increíble.
+            </p>
+            <p>
+                El tiempo de preparación aproximado es de 1h y 20 min
+                Los ingredientes son 1 taza de arroz blanco(200 calorías)
+                1 ½ taza de agua(0 calorías)
+                1 cda de sal(0 calorías)(sodio)o 2 cucharadas de miel(vitaminas, minerales,hierro,zinc, antioxidantes )(64 calorías)
+            </p>
+            <p>
+                Es una receta fácil y un snack nutritivo ya que no pasa de las 400 calorías.
+                Como topping una buena opción serían las fresas ya que nuestra galleta tendría buena imagen. Otras opciones de pocas calorías serían:
+                Fresa qué aporta vitamina del grupo B tales como la vitamina B6, el ácido fólico y la niacina,naranja con vitamina C, fibra y potasio,magnesio, fósforo y, en menor cantidad, calcio y manzanas que aportan vitamina b1 y b6, fósforo, minerales, potasio y sodio.
+            </p>
+            <p>
+                En total 6 galletas de arroz dan un total de entre 280 calorías incluyendo frutas y miel.
+            </p>
+
+            <h3>Propuesta 2: Gomitas A Base De Fresa (Lopez Santos Luis Angel)</h3>
+            <p>
+                Son snacks con fácil preparación.
+                Se selecciono la fresa como la fruta para la base de la preparación, ya que las fresas son altas en:
+            </p>
+            <ul>
+                <li>Vitamina C, esta vitamina ayuda al sistema inmunitario, a la formación de colágeno y la absorción de hierro.</li>
+                <li>Antioxidantes, que ayudan a proteger las células del daño oxidativo</li>
+                <li>Potasio</li>
+                <li>Fibra</li>
+                <li>Minerales</li>
+                <li>Vitaminas del grupo B</li>
+            </ul>
+            <p>
+                Además, las frases tienen un índice glucémico bajo,, por lo que no afectan mucho el azúcar. Otra característica, es que son bajas en calorías, por lo que son adecuadas para dietas o para mantener el peso
+            </p>
+
+            <h3>Propuesta 3: Avena (Garcia Gasga Danna Gabriela)</h3>
+            <p>
+                <strong>Avena (40 g, 155 kcal)</strong><br>
+                Rica en fibra que nos ayuda a mantener la saciedad y promueve la salud digestiva, los carbohidratos y sus nutrientes son vitaminas del grupo B y minerales como hierro y magnesio.
+            </p>
+            <p>
+                <strong>Almendras (15 g, 87 kcal)</strong><br>
+                Sus grasas saludables son ricas en ácidos grasos, beneficiosos para la salud cardiovascular, proteínas y fibra que nos ayuda a mantener la saciedad contribuyen a la salud muscular y vitaminas y minerales que son fuente de vitamina E, magnesio y antioxidantes.
+            </p>
+            <p>
+                <strong>Pasas (30 g, 90 kcal)</strong><br>
+                Este brinda una dulzura natural sin azúcares añadidos y aportan energía rápida, antioxidantes que ayudan a combatir el estrés oxidativo y sus nutrientes que aportan hierro, potasio y fibra.
+            </p>
+            <p>
+                <strong>Miel (15 g, 45 kcal)</strong><br>
+                Edulcorante natural nos ayuda a añade dulzura sin azúcares refinados, al igual tiene 
+                propiedades antibacterianas.
+            </p>
+            <p>
+                <strong>Semillas de chía (5 g, 25 kcal)</strong><br>
+                Son ricas en fibra así que nos ayudan a la digestión y la saciedad, antioxidantes y minerales, estas aportan calcio, magnesio y otros nutrientes esenciales, y como último ácidos grasos que brinda omega-3, fibra y proteínas, además de contener calcio, magnesio y antioxidantes.
+            </p>
+            <p>
+                Este snack no va ayudar tanto energéticamente como con su mezcla de carbohidratos, proteínas, grasas saludables y fibra.
+            </p>
+        </div>
+            </div>
+        </div>
+
+<div id="entrega2" class="section">
+    <div class="product-info">
+        <h2 class="entrega-title">Entrega 2</h2>
+        <div class="recipe-content">
+            <h3 class="recipe-section-title">Ingredientes (Formulación)</h3>
+            <ul class="ingredient-list">
+                <li><strong>Chocolate 60% Cacao (1 barra):</strong> Pasta de cacao, azúcares añadidos (Azúcar de caña), manteca de cacao, lecitina de soya, vainas de vainilla de Bourbon.</li>
+                <li><strong>Miel (2 cda):</strong> Azúcares, fructosa, glucosa, altosa, sacarosa, variedad de polisacáridos y agua</li>
+                <li><strong>Esencia De Vainilla (1 cda):</strong> Compuestos Aromáticos, Antioxidantes y Vitaminas Y Minerales</li>
+                <li><strong>Agua (1):</strong> Dos hidrógenos con oxígeno</li>
+                <li><strong>Arroz (2 tazas):</strong> Principalmente carbohidratos, pequeñas cantidades de proteínas y poca grasa</li>
+                <li><strong>Arándanos (7 piezas):</strong> antioxidantes, carbohidratos, azúcares naturales, fibra y pocas grasas</li>
+                <li><strong>Nuez (4 piezas picadas):</strong> grasas saludables, proteínas, fibra y carbohidratos</li>
+            </ul>
+
+            <h3 class="recipe-section-title">Materiales</h3>
+            <ul class="material-list">
+                <li>Bowl</li>
+                <li>Cuchara</li>
+                <li>Bandeja</li>
+                <li>Tazas</li>
+                <li>2 Ollas</li>
+            </ul>
+
+            <h3 class="recipe-section-title">Procedimiento</h3>
+            <ol class="procedure-list">
+                <li>
+                    <h4>Cocinar el arroz:</h4>
+                    <ol>
+                        <li>Lava el arroz varias veces para eliminar impurezas.</li>
+                        <li>En una olla, hierve el agua y añade el arroz y cocina a fuego medio por aproximadamente 18 minutos hasta que esté suave.</li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>Enfriar y formar las galletas:</h4>
+                    <ol>
+                        <li>Extiende el arroz cocido en una bandeja y deja enfriar completamente.</li>
+                        <li>Una vez frío el arroz añade la miel, la vainilla y mezcla bien.</li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>Dar forma a las galletas:</h4>
+                    <ol>
+                        <li>Toma pequeñas porciones de la mezcla con miel y vainilla, y forma bolitas, luego aplástalas para darles forma de galleta.</li>
+                        <li>Coloca las galletas en una bandeja para hornear.</li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>Hornear:</h4>
+                    <ol>
+                        <li>En un horno precalentado a 200°C por 30 minutos mete la bandeja con las galletas a hornear durante aproximadamente 35 minutos a 180°C o hasta que estén doradas y crujientes.</li>
+                        <li>Preparar la cobertura de chocolate:</li>
+                        <li>Derrite el chocolate amargo en un recipiente al baño maría o en el microondas.</li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>Cubrir las galletas:</h4>
+                    <ol>
+                        <li>Una vez que las galletas estén frías, sumergelas o rocía el chocolate derretido sobre ellas.</li>
+                        <li>Decora con arándanos y nueces picadas si lo deseas.</li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>Refrigerar:</h4>
+                    <ul>
+                        <li>Deja enfriar las galletas en el refrigerador para que la cobertura se endurezca.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Servir:</h4>
+                    <ul>
+                        <li>Disfruta tus galletas como un snack saludable o postre.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3 class="recipe-section-title">Tecnología en uso: Horneado</h3>
+            <p>El horneado es método de cocción que consiste en someter alimentos al calor seco de un horno durante un tiempo determinado.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .recipe-content {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+    .recipe-section-title {
+        color: #ff69b4;
+        border-bottom: 2px solid #ff69b4;
+        padding-bottom: 5px;
+        margin-top: 30px;
+    }
+    .ingredient-list, .material-list, .procedure-list {
+        padding-left: 20px;
+    }
+    .ingredient-list li, .material-list li {
+        margin-bottom: 10px;
+    }
+    .procedure-list > li {
+        margin-bottom: 20px;
+    }
+    .procedure-list h4 {
+        color: #87cefa;
+        margin-bottom: 5px;
+    }
+    .procedure-list ol {
+        padding-left: 20px;
+    }
+</style>
+
+<div id="entrega3" class="section">
+    <div class="product-info">
+        <h2 class="entrega-title">Entrega 3</h2>
+        <div class="nutritional-content">
+            <h3 class="nutritional-section-title">Valor Nutrimental</h3>
+            
+            <h4 class="ingredient-title">1. Arroz Blanco Entero</h4>
+            <div class="ingredient-details">
+                <h5>Biomoléculas</h5>
+                <ul>
+                    <li>Carbohidratos: Principal fuente de energía que proporcionan energía de forma lenta y paulatina.</li>
+                    <li>Proteínas: Contribuyen al crecimiento y reparación celular, sin embargo, no son de tan buena calidad por su falta del aminoácido esencial lisina.</li>
+                    <li>Fibra: Ayuda en la digestión.</li>
+                    <li>Vitaminas y minerales: Como el niacina, la vitamina D, el calcio, la fibra, el hierro, la tiamina y la riboflavina.</li>
+                </ul>
+                
+                <h5>Aporte Nutricional (aproximadamente 100 g)</h5>
+                <ul>
+                    <li>Calorías: 367 kcal</li>
+                    <li>Proteínas: 8 g – 32 Kcal – (9 %)</li>
+                    <li>Hidratos de carbono: 77 g – 308 Kcal – (84 %)</li>
+                    <li>Grasas: 3 g – 27 Kcal – (7 %)</li>
+                    <li>Fibra: 0,4g.</li>
+                    <li>Vitamina B1 (Tiamina): 0,578 mg</li>
+                    <li>Vitamina B2 (Riboflavina): 0,048 mg</li>
+                    <li>Vitamina B3 (Niacina): 5,093 mg</li>
+                    <li>Vitamina B5 (Ácido pantoténico): 1,342 mg</li>
+                    <li>Vitamina B6 (Piridoxina): 0,145 mg</li>
+                    <li>Vitamina B9 (Ácido fólico): 9 microgramos</li>
+                    <li>Vitamina B12 (Cianocobalamina): 0 microgramos</li>
+                    <li>Vitamina E: 0,11 mg</li>
+                    <li>Calcio: 9 mg</li>
+                    <li>Hierro: 4,36 mg</li>
+                    <li>Magnesio: 35 mg</li>
+                    <li>Zinc: 1,16 mg</li>
+                    <li>Sodio: 1 mg</li>
+                    <li>Potasio: 86 mg</li>
+                    <li>Fósforo: 108 mg</li>
+                    <li>Selenio: 15,1 microgramos</li>
+                </ul>
+                
+                <h5>Beneficios</h5>
+                <ul>
+                    <li>Energía sostenida: Proporciona carbohidratos complejos que liberan energía de manera gradual.</li>
+                    <li>Digestión saludable: La fibra ayuda a mantener un sistema digestivo eficiente.</li>
+                </ul>
+            </div>
+
+            <h4 class="ingredient-title">2. Chocolate Amargo 60% Cacao</h4>
+            <div class="ingredient-details">
+                <h5>Biomoléculas</h5>
+                <ul>
+                    <li>Minerales: Fósforo, magnesio, hierro, potasio, calcio, zinc, cobre y manganeso</li>
+                    <li>Vitaminas: A, B1, B2, B3, C, E, ácido pantoténico, tiamina y riboflavina</li>
+                    <li>Proteínas: Aminoácidos como el triptófano, que ayudan a construir los tejidos musculares</li>
+                    <li>Lípidos: La manteca de cacao contiene ácido oleico, ácido esteárico y ácido palmítico</li>
+                    <li>Teobromina: Una sustancia que estimula la circulación sanguínea y la diuresis</li>
+                    <li>Polifenoles: Compuestos que evitan la oxidación del colesterol y pueden ayudar a prevenir trastornos cardiovasculares</li>
+                    <li>Flavonoles: Antioxidantes que se encuentran en el chocolate amargo</li>
+                </ul>
+                
+                <h5>Aporte Nutricional (por 100 g)</h5>
+                <ul>
+                    <li>Energía: 532 Kcal</li>
+                    <li>Proteínas: 7,8 g</li>
+                    <li>Lípidos totales: 30,6 g</li>
+                    <li>AG saturados: 18,9 g</li>
+                    <li>AG monoinsaturados: 10,1 g</li>
+                    <li>AG poliinsaturados: 0,98 g</li>
+                    <li>v-3: 0,048 g</li>
+                    <li>C18:2 Linoleico (v-6): 0,933 g</li>
+                    <li>Colesterol: 9 mg/1000 kcal</li>
+                    <li>Agua: 5,2 g</li>
+                    <li>Calcio: 38 mg</li>
+                    <li>Hierro: 2,4 mg</li>
+                    <li>Magnesio: 100 mg</li>
+                    <li>Zinc: 0,2 mg</li>
+                    <li>Sodio: 11 mg</li>
+                    <li>Potasio: 300 mg</li>
+                    <li>Fósforo: 411 mg</li>
+                    <li>Selenio: 2 µg</li>
+                    <li>Tiamina: 0,07 mg</li>
+                    <li>Riboflavina: 0,08 mg</li>
+                    <li>Equivalentes niacina: 1,2 mg</li>
+                    <li>Vitamina B6: 0,07 mg</li>
+                    <li>Folatos: 10 µg</li>
+                    <li>Vitamina A (Eq. Retinol): 6,6 µg</li>
+                    <li>Vitamina E: 0,85 mg</li>
+                </ul>
+                
+                <h5>Beneficios</h5>
+                <ul>
+                    <li>Antioxidante: Los flavonoides ayudan a combatir el estrés oxidativo.</li>
+                    <li>Salud del corazón: Mejora la circulación y reduce la presión arterial.</li>
+                </ul>
+            </div>
+
+            <h4 class="ingredient-title">3. Miel de Abeja</h4>
+            <div class="ingredient-details">
+                <h5>Biomoléculas</h5>
+                <ul>
+                    <li>Carbohidratos: Principalmente azúcares naturales.</li>
+                    <li>Antioxidantes: Flavonoides y ácidos fenólicos.</li>
+                </ul>
+                
+                <h5>Aporte Nutricional (aproximadamente 42 g)</h5>
+                <ul>
+                    <li>Calorías: 128 kcal</li>
+                    <li>Carbohidratos: 34 g</li>
+                </ul>
+                
+                <h5>Beneficios</h5>
+                <ul>
+                    <li>Energía rápida: Proporciona azúcares simples que son fácilmente digeribles.</li>
+                    <li>Propiedades antibacterianas: Puede ayudar en la curación de heridas.</li>
+                    <li>La miel orgánica puede ayudar a mejorar el metabolismo y aliviar la sensación de pesadez.</li>
+                    <li>Alivia el estreñimiento</li>
+                    <li>Ayuda a reducir el colesterol malo</li>
+                </ul>
+                <p>Proteínas de muy baja calidad por la poca cantidad que tienen.</p>
+            </div>
+
+            <h4 class="ingredient-title">4. Arándanos</h4>
+            <div class="ingredient-details">
+                <h5>Biomoléculas</h5>
+                <ul>
+                    <li>Antioxidantes: Especialmente antocianinas.</li>
+                    <li>Vitaminas: Vitamina C, y Vitamina A.</li>
+                    <li>Potasio, Fibra, Calcio, Hierro, Manganeso.</li>
+                </ul>
+                
+                <h5>Aporte Nutricional (aproximadamente 100 g)</h5>
+                <ul>
+                    <li>Calorías: 57 kcal</li>
+                    <li>Carbohidratos: 14 g</li>
+                    <li>Fibra: 2.4 g</li>
+                </ul>
+                
+                <h5>Beneficios</h5>
+                <ul>
+                    <li>Salud cerebral: Los antioxidantes pueden mejorar la memoria y la función cognitiva.</li>
+                    <li>Salud cardiovascular: Ayudan a reducir el riesgo de enfermedades del corazón.</li>
+                    <li>Digestión: La fibra ayuda a regular el tránsito intestinal, previene el estreñimiento y mejora la salud de la microbiota intestinal.</li>
+                    <li>Presión arterial: Los arándanos pueden ayudar a reducir la presión arterial.</li>
+                    <li>Sistema cardiovascular: Los arándanos pueden proteger el sistema cardiovascular</li>
+                </ul>
+                <p>Contienen proteínas de baja calidad ya que apenas alcanza 0.7.</p>
+            </div>
+
+            <h4 class="ingredient-title">5. Esencia de vainilla</h4>
+            <div class="ingredient-details">
+                <h5>Biomoléculas</h5>
+                <ul>
+                    <li>Grasas saturadas: 0</li>
+                    <li>Vitaminas liposolubles: Como la vitamina A.</li>
+                </ul>
+                
+                <h5>Aporte Nutricional (por aproximadamente 10 g)</h5>
+                <ul>
+                    <li>Calorías: 29 kcal</li>
+                    <li>Grasas: 0 g</li>
+                    <li>Vitaminas B2 y Vitaminas B3</li>
+                </ul>
+                
+                <h5>Beneficios</h5>
+                <ul>
+                    <li>Antiséptico: La vainilla puede ayudar a tratar heridas y úlceras.</li>
+                    <li>Antiinflamatorio: La vainilla tiene propiedades antiinflamatorias que pueden ayudar a aliviar la inflamación de la piel y las articulaciones.</li>
+                    <li>Fortalecimiento del cabello: La vainilla puede ayudar a fortalecer el cabello, estimular el crecimiento de los folículos y hacer que el cabello luzca más brillante.</li>
+                    <li>Digestión: La fibra ayuda a regular el tránsito intestinal, previene el estreñimiento y mejora la salud de la microbiota intestinal.</li>
+                </ul>
+                <p>Proteínas de mala calidad.</p>
+            </div>
+
+            <h4 class="ingredient-title">6. Nueces Picadas (4 piezas)</h4>
+            <div class="ingredient-details">
+                <h5>Biomoléculas</h5>
+                <ul>
+                    <li>Ácidos grasos omega-3: Beneficiosos para la salud del corazón.</li>
+                    <li>Proteínas y fibra.</li>
+                </ul>
+                
+                <h5>Aporte Nutricional (aproximadamente 28 g)</h5>
+                <ul>
+                    <li>Calorías: 185 kcal</li>
+                    <li>Grasas: 18 g</li>
+                    <li>Proteínas: 4 g</li>
+                    <li>Carbohidratos: 4 g</li>
+                </ul>
+                
+                <h5>Beneficios</h5>
+                <ul>
+                    <li>Salud cerebral: Los omega-3 son esenciales para la función cognitiva.</li>
+                    <li>Control del colesterol: Ayudan a reducir el colesterol LDL ("malo").</li>
+                    <li>Digestión: La fibra ayuda a regular el tránsito intestinal, previene el estreñimiento y mejora la salud de la microbiota intestinal.</li>
+                    <li>Cardiovascular: contienen vitamina E y magnesio.</li>
+                    <li>Las nueces aumentan el nivel de serotonina en el cerebro, que sirven fundamentalmente en el estado de ánimo.</li>
+                </ul>
+                <p>Proteínas de buena calidad</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="videos" class="section">
+    <div class="product-info">
+        <h2 class="entrega-title">Videos</h2>
+        <div class="video-content">
+            <div class="video-item">
+                <h3 class="video-title">Primera Prueba</h3>
+                <div class="video-container">
+                    <!-- Aquí va el código para embeber el video -->
+                    <video controls>
+                        <source src="Video 1.4.mp4" type="video/mp4">
+                        Tu navegador no soporta el tag de video.
+                    </video>
+                </div>
+                <p class="video-description">Descubre nuestros primeros pasos en la creación de Rice Bites. Un vistazo a nuestro proceso de experimentación y aprendizaje.</p>
+            </div>
+
+            <div class="video-item">
+                <h3 class="video-title">Receta Final</h3>
+                <div class="video-container">
+                    <!-- Aquí va el código para embeber el video -->
+                    <video controls>
+                        <source src="Video 2.2.mp4" type="video/mp4">
+                        Tu navegador no soporta el tag de video.
+                    </video>
+                </div>
+                <p class="video-description">Presentamos la receta definitiva de Rice Bites. Observa cómo preparamos nuestro delicioso snack saludable paso a paso.</p>
+            </div>
+
+            <div class="video-item">
+                <h3 class="video-title">Trabajo en Equipo</h3>
+                <div class="video-container">
+                    <!-- Aquí va el código para embeber el video -->
+                    <video controls>
+                        <source src="Trabajo 3.mp4" type="video/mp4">
+                        Tu navegador no soporta el tag de video.
+                    </video>
+                </div>
+                <p class="video-description">Conoce al equipo detrás de Rice Bites. Un vistazo a nuestra colaboración y pasión por crear snacks innovadores.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .video-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .video-item {
+        flex-basis: calc(33.333% - 20px);
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .video-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .video-title {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 700;
+        color: #ff69b4;
+        padding: 15px;
+        margin: 0;
+        text-align: center;
+        background: linear-gradient(45deg, #ffd1dc, #87cefa);
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video-description {
+        padding: 15px;
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .video-item {
+            flex-basis: 100%;
+        }
+    }
+</style>
+
+<style>
+    .nutritional-content {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+    .nutritional-section-title {
+        color: #ff69b4;
+        border-bottom: 2px solid #ff69b4;
+        padding-bottom: 5px;
+        margin-top: 30px;
+    }
+    .ingredient-title {
+        color: #87cefa;
+        margin-top: 20px;
+    }
+    .ingredient-details h5 {
+        color: #ff69b4;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .ingredient-details ul {
+        padding-left: 20px;
+        margin-top: 5px;
+    }
+    .ingredient-details li {
+        margin-bottom: 5px;
+    }
+</style>
+
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas las secciones
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            // Muestra la sección seleccionada
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
